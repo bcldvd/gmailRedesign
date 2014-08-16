@@ -13,6 +13,7 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
 
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/css/main.css">
 
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -32,20 +33,70 @@
         <div class="container-fluid">
 
             <div id="navbar">
-                <div class="row">
-                    <div class="col-md-2">
+                    <div id="logo">
                         <h1><img src="http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google Logo"/></h1>
                     </div>
-                    <div class="col-md-4">
-                        <input type="text"/>
-                    </div>
-                    <div class="col-md-6"></div>
+                <div id="navbarSearch">
+                    <input type="text"/>
+                    <i class="fa fa-search"></i>
                 </div>
             </div>
 
 
             <div id="sidebar">
-                <p>sidebar</p>
+                <div id="sidebarUserInfo">
+                    <img src="https://avatars1.githubusercontent.com/u/569053?v=2&s=460" alt="Avatar David Boclé" class="img-circle"/>
+                    <div id="sidebarUserMenu">
+                        <a>David Bocle <i class="fa fa-caret-down"></i></a>
+                        <p>Account</p>
+                    </div>
+                </div>
+                <div id="mailboxes" class="sidebarElement">
+                    <h3>Mailboxes</h3>
+                    <div class="mailbox">
+                        <i class="fa fa-inbox"></i>
+                        <p>Inbox</p>
+                    </div>
+                    <div class="mailbox">
+                        <i class="fa fa-star-o"></i>
+                        <p>Special</p>
+                    </div>
+                    <div class="mailbox">
+                        <i class="fa fa-clock-o"></i>
+                        <p>Important</p>
+                    </div>
+                    <div class="mailbox">
+                        <i class="fa fa-envelope-o"></i>
+                        <p>Sent</p>
+                    </div>
+                    <div class="mailbox">
+                        <i class="fa fa-plus"></i>
+                        <p>Circles</p>
+                    </div>
+                    <div class="mailbox">
+                        <i class="fa fa-file-o"></i>
+                        <p>Drafts</p>
+                    </div>
+                </div>
+                <div id="tags" class="sidebarElement">
+                    <h3>Tags</h3>
+                    <div class="tag" id="ametyst">
+                        <i class="fa fa-circle"></i>
+                        <p>ametyst</p>
+                    </div>
+                    <div class="tag" id="peterRiver">
+                        <i class="fa fa-circle"></i>
+                        <p>peterRiver</p>
+                    </div>
+                    <div class="tag" id="emerald">
+                        <i class="fa fa-circle"></i>
+                        <p>emerald</p>
+                    </div>
+                    <div class="tag" id="sunFlower">
+                        <i class="fa fa-circle"></i>
+                        <p>sunFlower</p>
+                    </div>
+                </div>
             </div>
 
 

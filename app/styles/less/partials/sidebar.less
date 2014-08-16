@@ -1,8 +1,104 @@
 @sidebarWidth: 200px;
+@sidebarUserInfoHeight: 40px;
 
 #sidebar {
-  background: @clouds;
-  height: 100%;
+  height: calc(~"100% - "@navbarHeight);
   width: @sidebarWidth;
   float: left;
+  padding: 0 20px;
+
+  #sidebarUserInfo {
+    height: @sidebarUserInfoHeight;
+    padding: (@sidebarUserInfoHeight / 1.5) 0;
+
+    img {
+      @margin-right: 10px;
+      height: @sidebarUserInfoHeight - @margin-right;
+      margin: 5px @margin-right 5px 0;
+      float: left;
+    }
+
+    #sidebarUserMenu {
+      height: @sidebarUserInfoHeight;
+
+      a {
+        color: #000;
+
+        .fa {
+          color: @concrete;
+        }
+      }
+
+      p {
+        color: @silver;
+      }
+    }
+  }
+
+  h3 {
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    color: @silver;
+    font-size: 14px;
+    font-weight: 200;
+
+  }
+
+  .sidebarElement {
+    div {
+      @height: 20px;
+      height: (@height * 1.5);
+      padding: (@height / 4) 0;
+
+      &:hover {
+        background: @clouds;
+        cursor: pointer;
+        color: @concrete;
+      }
+
+      i {
+        float: left;
+        font-size: @height;
+        width: @height;
+        color: @silver;
+        text-align: center;
+        margin:0 (@height / 1.5);
+      }
+
+      p {
+        height: @height;
+        font-size: (@height / 1.4);
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  #mailboxes {
+    clear: both;
+    margin-top: 40px;
+  }
+
+
+  #tags {
+    clear: both;
+    margin-top: 40px;
+
+    #ametyst i {
+      color: @amethyst;
+    }
+
+    #peterRiver i {
+      color: @peterRiver;
+    }
+
+    #emerald i {
+      color: @emerald;
+    }
+
+    #sunFlower i {
+      color: @sunFlower;
+    }
+  }
+
+
 }

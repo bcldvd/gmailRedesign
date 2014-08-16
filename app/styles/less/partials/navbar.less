@@ -1,18 +1,23 @@
 @navbarHeight: 80px;
 @navbarInputHeight: 25px;
+@navbarLogoWidth: 200px;
+@navbarInputSearchIconHeight: 14px;
 
 #navbar {
   height: @navbarHeight;
   width: 100%;
 
   padding: ((@navbarHeight - @navbarInputHeight)/2) 0;
+  border-bottom: 1px solid @clouds;
 
   overflow-y: hidden;
 
-  .row {
-    margin: 0;
+  #logo {
+    width: @navbarLogoWidth;
+    float: left;
 
     h1 {
+      height: @navbarInputHeight;
       font-size: @navbarInputHeight;
       margin: 0;
 
@@ -21,6 +26,12 @@
         padding-left: 50px;
       }
     }
+  }
+
+  #navbarSearch {
+    height: @navbarInputHeight;
+    position: relative;
+    color: @asbestos;
 
     input {
       height: @navbarInputHeight;
@@ -30,9 +41,17 @@
       outline: none;
       border: 0;
       border-radius: 15px;
-      padding-left: 20px;
+      padding-left: 25px;
     }
 
+    .fa-search {
+      position: absolute;
+      left: @navbarLogoWidth + 10;
+      top: ((@navbarInputHeight - @navbarInputSearchIconHeight)/2);
+
+      font-size: @navbarInputSearchIconHeight;
+    }
   }
+
 
 }

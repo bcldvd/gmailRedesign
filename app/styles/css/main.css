@@ -12,43 +12,127 @@
   height: 80px;
   width: 100%;
   padding: 27.5px 0;
+  border-bottom: 1px solid #ecf0f1;
   overflow-y: hidden;
 }
-#navbar .row {
-  margin: 0;
+#navbar #logo {
+  width: 200px;
+  float: left;
 }
-#navbar .row h1 {
+#navbar #logo h1 {
+  height: 25px;
   font-size: 25px;
   margin: 0;
 }
-#navbar .row h1 img {
+#navbar #logo h1 img {
   height: 25px;
   padding-left: 50px;
 }
-#navbar .row input {
+#navbar #navbarSearch {
+  height: 25px;
+  position: relative;
+  color: #7f8c8d;
+}
+#navbar #navbarSearch input {
   height: 25px;
   background: #ecf0f1;
   color: #95a5a6;
   outline: none;
   border: 0;
   border-radius: 15px;
-  padding-left: 20px;
+  padding-left: 25px;
+}
+#navbar #navbarSearch .fa-search {
+  position: absolute;
+  left: 210px;
+  top: 5.5px;
+  font-size: 14px;
 }
 #sidebar {
-  background: #ecf0f1;
-  height: 100%;
+  height: calc(100% -  80px);
   width: 200px;
   float: left;
+  padding: 0 20px;
+}
+#sidebar #sidebarUserInfo {
+  height: 40px;
+  padding: 26.66666667px 0;
+}
+#sidebar #sidebarUserInfo img {
+  height: 30px;
+  margin: 5px 10px 5px 0;
+  float: left;
+}
+#sidebar #sidebarUserInfo #sidebarUserMenu {
+  height: 40px;
+}
+#sidebar #sidebarUserInfo #sidebarUserMenu a {
+  color: #000;
+}
+#sidebar #sidebarUserInfo #sidebarUserMenu a .fa {
+  color: #95a5a6;
+}
+#sidebar #sidebarUserInfo #sidebarUserMenu p {
+  color: #bdc3c7;
+}
+#sidebar h3 {
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+  color: #bdc3c7;
+  font-size: 14px;
+  font-weight: 200;
+}
+#sidebar .sidebarElement div {
+  height: 30px;
+  padding: 5px 0;
+}
+#sidebar .sidebarElement div:hover {
+  background: #ecf0f1;
+  cursor: pointer;
+  color: #95a5a6;
+}
+#sidebar .sidebarElement div i {
+  float: left;
+  font-size: 20px;
+  width: 20px;
+  color: #bdc3c7;
+  text-align: center;
+  margin: 0 13.33333333px;
+}
+#sidebar .sidebarElement div p {
+  height: 20px;
+  font-size: 14.28571429px;
+  text-transform: capitalize;
+}
+#sidebar #mailboxes {
+  clear: both;
+  margin-top: 40px;
+}
+#sidebar #tags {
+  clear: both;
+  margin-top: 40px;
+}
+#sidebar #tags #ametyst i {
+  color: #9b59b6;
+}
+#sidebar #tags #peterRiver i {
+  color: #3498db;
+}
+#sidebar #tags #emerald i {
+  color: #2ecc71;
+}
+#sidebar #tags #sunFlower i {
+  color: #f1c40f;
 }
 #messagesContainer {
   background: #bdc3c7;
-  height: 100%;
+  height: calc(100% -  80px);
   width: 400px;
   float: left;
 }
 #messageContainer {
   background: #95a5a6;
-  height: 100%;
+  height: calc(100% -  80px);
   width: auto;
   margin-left: 600px;
 }
@@ -56,4 +140,10 @@ html,
 body,
 .container-fluid {
   height: 100%;
+  font-family: 'Lato';
+}
+html p,
+body p,
+.container-fluid p {
+  margin: 0;
 }
