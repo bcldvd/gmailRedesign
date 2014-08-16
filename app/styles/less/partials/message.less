@@ -1,9 +1,43 @@
-
+@messageContainerPadding: 30px;
+@h2Height: 30px;
 
 #messageContainer {
-  background: @concrete;
   height: calc(~"100% - "@navbarHeight);
   width: auto;
+  border-left: 1px solid @clouds;
 
+  padding: @messageContainerPadding;
   margin-left: (@sidebarWidth + @messagesWidth);
+
+  h2 {
+    height: @h2Height;
+    font-size: @h2Height;
+    margin: 0 0 10px;
+  }
+
+  .messageInfo {
+    height: (@h2Height / 1.5);
+
+    .senderInfo {
+      color: @silver;
+
+      span {
+        color: @linkColors;
+      }
+    }
+
+    .timeReceived {
+      color: @linkColors;
+    }
+  }
+
+  hr {
+    margin: (@h2Height / 2) 0;
+  }
+
+  p.message {
+    color: @asbestos;
+    text-align: justify;
+  }
+
 }

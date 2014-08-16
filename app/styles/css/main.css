@@ -177,10 +177,35 @@
   color: #bdc3c7;
 }
 #messageContainer {
-  background: #95a5a6;
   height: calc(100% -  80px);
   width: auto;
+  border-left: 1px solid #ecf0f1;
+  padding: 30px;
   margin-left: 600px;
+}
+#messageContainer h2 {
+  height: 30px;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+#messageContainer .messageInfo {
+  height: 20px;
+}
+#messageContainer .messageInfo .senderInfo {
+  color: #bdc3c7;
+}
+#messageContainer .messageInfo .senderInfo span {
+  color: #3498db;
+}
+#messageContainer .messageInfo .timeReceived {
+  color: #3498db;
+}
+#messageContainer hr {
+  margin: 15px 0;
+}
+#messageContainer p.message {
+  color: #7f8c8d;
+  text-align: justify;
 }
 html,
 body,
