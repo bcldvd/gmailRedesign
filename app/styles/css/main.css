@@ -53,6 +53,7 @@
   width: 200px;
   float: left;
   padding: 0 20px;
+  border-right: 1px solid #ecf0f1;
 }
 #sidebar #sidebarUserInfo {
   height: 40px;
@@ -68,6 +69,10 @@
 }
 #sidebar #sidebarUserInfo #sidebarUserMenu a {
   color: #000;
+}
+#sidebar #sidebarUserInfo #sidebarUserMenu a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 #sidebar #sidebarUserInfo #sidebarUserMenu a .fa {
   color: #95a5a6;
@@ -125,10 +130,51 @@
   color: #f1c40f;
 }
 #messagesContainer {
-  background: #bdc3c7;
   height: calc(100% -  80px);
   width: 400px;
   float: left;
+  overflow-y: scroll;
+}
+#messagesContainer .message {
+  padding: 20px 30px;
+  height: 120px;
+  border-bottom: 1px solid #ecf0f1;
+}
+#messagesContainer .message.tagAmethyst {
+  border-left: 3px solid #9b59b6;
+}
+#messagesContainer .message.tagPeterRiver {
+  border-left: 3px solid #3498db;
+}
+#messagesContainer .message.tagEmerald {
+  border-left: 3px solid #2ecc71;
+}
+#messagesContainer .message.tagSunFlower {
+  border-left: 3px solid #f1c40f;
+}
+#messagesContainer .message.active {
+  background: #ecf0f1;
+}
+#messagesContainer .message .row {
+  height: 40px;
+}
+#messagesContainer .message .row .messageInfo img {
+  height: 30px;
+  margin: 5px;
+  float: left;
+}
+#messagesContainer .message .row .messageInfo p.senderName {
+  font-weight: bold;
+}
+#messagesContainer .message .row .messageInfo p.messageObject {
+  font-weight: bold;
+  color: #3498db;
+}
+#messagesContainer .message .row .timeReceived {
+  color: #3498db;
+}
+#messagesContainer .message .messagePreview {
+  color: #bdc3c7;
 }
 #messageContainer {
   background: #95a5a6;

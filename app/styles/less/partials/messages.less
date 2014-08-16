@@ -1,8 +1,70 @@
 @messagesWidth: 400px;
 
 #messagesContainer {
-  background: @silver;
   height: calc(~"100% - "@navbarHeight);
   width: @messagesWidth;
   float: left;
+  overflow-y: scroll;
+
+
+  .message {
+    @messagePadding: 20px;
+    @messageHeight: 120px;
+    padding: @messagePadding (@messagePadding * 1.5);
+    height: @messageHeight;
+    border-bottom: 1px solid @clouds;
+
+    &.tagAmethyst {
+      border-left: 3px solid @amethyst;
+    }
+
+    &.tagPeterRiver {
+      border-left: 3px solid @peterRiver;
+    }
+
+    &.tagEmerald {
+      border-left: 3px solid @emerald;
+    }
+
+    &.tagSunFlower {
+      border-left: 3px solid @sunFlower;
+    }
+
+    &.active {
+      background: @clouds;
+    }
+
+
+    .row {
+      @height: 40px;
+      height: @height;
+
+      .messageInfo {
+
+        img {
+          @margin: 5px;
+          height: @height - (@margin*2);
+          margin: @margin;
+          float: left;
+        }
+
+        p.senderName {
+          font-weight: bold;
+        }
+
+        p.messageObject {
+          font-weight: bold;
+          color: @peterRiver;
+        }
+      }
+
+      .timeReceived {
+        color: @peterRiver;
+      }
+    }
+
+    .messagePreview {
+      color: @silver;
+    }
+  }
 }

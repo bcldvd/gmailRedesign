@@ -6,6 +6,7 @@
   width: @sidebarWidth;
   float: left;
   padding: 0 20px;
+  border-right: 1px solid @clouds;
 
   #sidebarUserInfo {
     height: @sidebarUserInfoHeight;
@@ -23,6 +24,11 @@
 
       a {
         color: #000;
+
+        &:hover {
+          text-decoration: none;
+          cursor: pointer;
+        }
 
         .fa {
           color: @concrete;
