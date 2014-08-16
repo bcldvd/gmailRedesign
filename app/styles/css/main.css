@@ -8,3 +8,52 @@
   
   /* IE9 Compat Modes */
 }
+#navbar {
+  height: 80px;
+  width: 100%;
+  padding: 27.5px 0;
+  overflow-y: hidden;
+}
+#navbar .row {
+  margin: 0;
+}
+#navbar .row h1 {
+  font-size: 25px;
+  margin: 0;
+}
+#navbar .row h1 img {
+  height: 25px;
+  padding-left: 50px;
+}
+#navbar .row input {
+  height: 25px;
+  background: #ecf0f1;
+  color: #95a5a6;
+  outline: none;
+  border: 0;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+#sidebar {
+  background: #ecf0f1;
+  height: 100%;
+  width: 200px;
+  float: left;
+}
+#messagesContainer {
+  background: #bdc3c7;
+  height: 100%;
+  width: 400px;
+  float: left;
+}
+#messageContainer {
+  background: #95a5a6;
+  height: 100%;
+  width: auto;
+  margin-left: 600px;
+}
+html,
+body,
+.container-fluid {
+  height: 100%;
+}

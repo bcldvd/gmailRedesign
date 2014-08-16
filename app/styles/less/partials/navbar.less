@@ -1,0 +1,38 @@
+@navbarHeight: 80px;
+@navbarInputHeight: 25px;
+
+#navbar {
+  height: @navbarHeight;
+  width: 100%;
+
+  padding: ((@navbarHeight - @navbarInputHeight)/2) 0;
+
+  overflow-y: hidden;
+
+  .row {
+    margin: 0;
+
+    h1 {
+      font-size: @navbarInputHeight;
+      margin: 0;
+
+      img {
+        height: @navbarInputHeight;
+        padding-left: 50px;
+      }
+    }
+
+    input {
+      height: @navbarInputHeight;
+
+      background: @clouds;
+      color: @concrete;
+      outline: none;
+      border: 0;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+
+  }
+
+}
